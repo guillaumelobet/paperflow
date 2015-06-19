@@ -24,7 +24,7 @@
       <header>
         <img src="images/paperflow_icon.png" alt="icon" style="width:90%;">
 
-        <p>Create a publication network to make sense of your research path</p>
+        <p>Create a publication network to make sense of your research journey.</p>
 
         <p class="view"><a href="https://github.com/guillaumelobet/paperflow">View the Project on GitHub <small>guillaumelobet/paperflow</small></a></p>
 
@@ -75,9 +75,38 @@ shiny::runGitHub("guillaumelobet/paperflow", "guillaumelobet")
 <script type="application/htmlwidget-sizing" data-for="htmlwidget-7951">{"viewer":{"width":"100%","height":350,"padding":15,"fill":false},"browser":{"width":"100%","height":500,"padding":40,"fill":false}}</script>
 
 
+<h2>
+<a id="input-paperflow" class="anchor" href="#input-paperflow" aria-hidden="true"><span class="octicon octicon-link"></span></a>Input file</h2>
+
+<h3>PaperFlow like CSV'</h3>
+As input, PaperFlow needs a .csv file with the following columns:
+
+<ul>
+<li><b>authors</b>: list of authors, separated by commas.</li>
+<li><b>first_author</b></li>
+<li><b>title</b></li>
+<li><b>source</b>: the journal</li>
+<li><b>month</b></li>
+<li><b>year</b></li>
+<li><b>volume</b></li>
+<li><b>pages</b></li>
+<li><b>citations</b>: number of citations for the paper.</li>
+<li><b>key1</b>: used for the connections. Separated by commas.</li>
+<li><b>key2</b>: used for grouping. Separated by commas.</li>
+
+</ul>
+
+Important: fields needs to be separated by a <b>;</b>. An example file is <a href="data/paper_list.csv">available here</a>.
 
 
+<h3>PaperFlow love ImpactStory</h3>
 
+Well, as I am an <a href="https://impactstory.org/GuillaumeLobet">ImpactStory advisor</a>, I implemented an import from an ImpactStory profile. All you need to do is:
+
+<ol>
+<li><b>Create an ImpactStory profile</b>: if you do not have one.</li>
+<li><b>Update you publication keywords</b></li>
+</ol>
 
 
 <h3>
