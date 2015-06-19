@@ -74,8 +74,20 @@ shiny::runGitHub("guillaumelobet/paperflow", "guillaumelobet")
       "legend":false,"legendWidth":0.2,"width":"100%","height":null,"highlight":true,"idselection":true},"evals":[]}</script>
 <script type="application/htmlwidget-sizing" data-for="htmlwidget-7951">{"viewer":{"width":"100%","height":350,"padding":15,"fill":false},"browser":{"width":"100%","height":500,"padding":40,"fill":false}}</script>
 
+</br></br>
+<h2>How does it work?</h2>
+
+Paperflow follows a set of simple rules to create your network:
+
+<ol>
+  <li>The first paper is the older;</li>
+  <li>Papers are connected using their keywords;</li>
+  <li>Chronological order is respected between the papers;</li>
+  <li>Size of the node is proportional to the number of citations;</li>
+<ol>
 
 
+</br>
 <h2>PaperFlow likes CSV's</h2>
 As input, PaperFlow needs a .csv file with the following columns:
 
@@ -96,7 +108,9 @@ As input, PaperFlow needs a .csv file with the following columns:
 
 Important: fields needs to be separated by a semi-colon ( <b>;</b> ). An example file is <a href="data/paper_list.csv">available here</a>.
 
-<hr>
+
+
+</br>
 <h2>PaperFlow loves ImpactStory</h2>
 
 Well, as I am an <a href="https://impactstory.org/GuillaumeLobet">ImpactStory advisor</a>, I implemented an import from an ImpactStory profile. All you need to do is:
@@ -106,8 +120,9 @@ Well, as I am an <a href="https://impactstory.org/GuillaumeLobet">ImpactStory ad
 <li><b>Update you publication keywords</b></li>
 </ol>
 
+Then, just choose ImpactStory in the <b>Data coming from</b> list and enter your ImpactStory username. All data, including the number of citations, will be extracted from your profile.
 
-<hr>
+
 </br>
 <h2>
 <a id="required-libraries" class="anchor" href="#required-libraries" aria-hidden="true"><span class="octicon octicon-link"></span></a>Required libraries</h2>
