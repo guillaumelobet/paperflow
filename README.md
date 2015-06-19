@@ -4,19 +4,19 @@ PaperFlow display your publication in network fashion, making sense of your scie
 
 ## Required libraries
 
-- visNetwork
+- [visNetwork](http://dataknowledge.github.io/visNetwork/)
 		
 		devtools::install_git('https://github.com/dataknowledge/visNetwork')
   
-- plyr
-- rjson
-- RCurl
+- [plyr](http://cran.r-project.org/web/packages/plyr/index.html)
+- [rjson](http://cran.r-project.org/web/packages/rjson/index.html)
+- [RCurl](http://cran.r-project.org/web/packages/RCurl/index.html)
 
 ## Install and run PaperFlow
 
 Run the following command in your R console:
 
 	library(shiny)
-	runGitHub("guillaumelobet/paperflow", "guillaumelobet") 
+	shiny::runGitHub("guillaumelobet/paperflow", "guillaumelobet") 
 	
 	
