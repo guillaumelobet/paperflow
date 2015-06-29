@@ -47,18 +47,11 @@ shinyServer(
         path <- paste("https://impactstory.org/profile/",input$username,".json", sep="")
         
         tryCatch({          
-          if(exists("products")){
-            if(is.null(products) || input$username != usr){
-              f <- getURL(path, verbose = F)
-              data <- fromJSON(f)      
-              products <<-data$products
-              usr <<- input$username
-            }
-          }else{
-            f <- getURL(path, verbose = F)
-            data <- fromJSON(f)      
-            products <<-data$products
-          }
+
+          f <- getURL(path, verbose = F)
+          data <- fromJSON(f)      
+          products <<-data$products
+      
           
           for(i in 1:length(products)){
             prod <- products[i][[1]]
